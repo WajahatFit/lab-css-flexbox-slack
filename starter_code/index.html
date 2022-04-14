@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 
     <!-- link the font awesome CDN -->
     <link
@@ -11,21 +12,25 @@
       rel="stylesheet"
     />
 
+
     <!-- link your styles -->
+    <link rel="stylesheet" href="./stylesheets/reset.css">
     <link rel="stylesheet" href="./stylesheets/style.css" />
-    <link rel="stylesheet" href="/starter_code/stylesheets/reset.css">
     <title>Where work happens | Slack</title>
   </head>
 
   <body>
-    <nav class="nav-tab nav-container">
-      <div><img src="./images/slack-logo.png" alt="slack_logo" /></div>
-      
+    <nav class="nav-container">
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <img class="nav-img" src="./images/slack-logo.png" alt="slack_logo" />
       <ul>
-        <li>Why Slack?</li>
-        <li>Pricing</li>
-        <li>About Us</li>
-        <li>Your Workspaces</li>
+        <li> <a href="#">Why Slack?</a></li>
+        <li> <a href="#">Pricing</a> </li>
+        <li> <a href="#">About Us</a></li>
+        <li> <a href="#">Your Workspaces</a></li>
       </ul>
     </nav>
     <header class="header header-container">
@@ -38,11 +43,11 @@
         covered.
       </p>
       <form class="email" action="">
-        <input type="text" placeholder="Email">
+        <input class="email" type="text" placeholder="Email">
       </form>
       <button type="button" name="button">GET STARTED</button>
       <p class="p">Already using Slack? <a href="#">Sign in</a></p>
-      <img src="./images/home_talking.png" alt="home_work_happening" />
+      <img class="home-work"src="./images/home_talking.png" alt="home_work_happening" />
     </header>
     <main>
       <div class="logo-setting">
@@ -51,7 +56,7 @@
           Millions of people around the world have already made Slack the place
           where their work happens.
         </p>
-        <button>DISCOVER WHY</button>
+         <div class="button-container"><button>DISCOVER WHY</button></div>
         <img src="./images/airbnb-logo.png" alt="" />
         <hr>
         <img src="./images/capital-one-logo.png" alt="" />
@@ -66,10 +71,8 @@
       </div>
       <div class="try-for-free tff-container">
         <p class="tff-heading">Try it for free</p>
-        <p>Already using Slack? <a href="">Sign in</a></p>
-        <form class="email" action="">
+        <p>Already using Slack? <a href="#">Sign in</a></p>
           <input type="text" placeholder="Email">
-        </form>
         <button type="button" name="button">GET STARTED</button>
       </div>
     </main>
@@ -93,6 +96,8 @@
           <li>Pricing</li>
           <li>Security</li>
         </ul>
+      </div>
+      <div class="flex-company">
         <ul>
           <li><b>RESOURCES</b></li>
           <li>Download</li>
@@ -111,21 +116,30 @@
         </ul>
       </div>
       
-      <div class="contact contact-container">
-        <ul>
+      
+      <div class="contact-container">
+        <ul class="contact" >
           <li>Status</li>
           <li>Privacy & Terms</li>
           <li>Contact Us</li>
         </ul>
-        <div class="footer footer-container">
-          <img src="./images/us-flag.png" alt="" />
-          <span>English (US)</span>
-          <i class="fas fa-chevron-down"></i>
-          <i class="fab fa-twitter"></i>
-          <i class="fab fa-facebook-f"></i>
-          <i class="fab fa-youtube"></i>
-        </div>
       </div>
+        <div class="footer-container">
+          <div class="footer">
+            <div><img src="./images/us-flag.png" alt="" /></div>
+              <div><span>English (US)</span></div>
+          </div>
+        
+          
+           <div class="icons footer-container" >
+            <i class="fas fa-chevron-down"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-youtube"></i>
+          </div>
+
+         </div>
+       </div>
     </footer>
   </body>
 </html>
